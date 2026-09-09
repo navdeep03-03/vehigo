@@ -1,0 +1,511 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Vehigo | Fleet Compliance Command Center</title>
+    <meta
+      name="description"
+      content="Vehigo is a private fleet compliance command center for challan tracking, renewal reminders, payment coordination, receipts, and API-ready reporting."
+    />
+    <meta name="theme-color" content="#101214" />
+    <link rel="icon" href="assets/vehigo-mark.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" data-header>
+      <nav class="nav-shell" aria-label="Primary navigation">
+        <a class="brand" href="#" aria-label="Vehigo home">
+          <img src="assets/vehigo-mark.svg" alt="" width="36" height="36" />
+          <span>Vehigo</span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-menu">
+          <span class="sr-only">Open navigation</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4 7h16M4 12h16M4 17h16" />
+          </svg>
+        </button>
+
+        <div class="nav-menu" id="primary-menu" data-menu>
+          <a href="#platform">Platform</a>
+          <a href="#workflow">Workflow</a>
+          <a href="#preview">Preview</a>
+          <a href="#api">API</a>
+          <a class="nav-cta" href="#demo">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M5 12h14M13 6l6 6-6 6" />
+            </svg>
+            Book demo
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" aria-labelledby="hero-title">
+        <img
+          class="hero-visual"
+          src="assets/vehigo-command-preview.svg"
+          alt="Vehigo command center interface showing fleet risk, challans, renewals, payments, and receipts"
+        />
+        <div class="hero-shade" aria-hidden="true"></div>
+        <div class="container hero-content">
+          <p class="eyebrow">Private fleet compliance platform</p>
+          <h1 id="hero-title">Vehigo</h1>
+          <p class="hero-copy">
+            Track challans, renewals, payments, receipts, and compliance reporting
+            for growing Indian fleets.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#demo">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M8 5v14l11-7-11-7Z" />
+              </svg>
+              Request demo
+            </a>
+            <a class="button button-secondary" href="#preview">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4 5h16v14H4zM4 10h16" />
+              </svg>
+              View preview
+            </a>
+          </div>
+          <dl class="hero-metrics" aria-label="Platform highlights">
+            <div>
+              <dt>3 min</dt>
+              <dd>fleet import review</dd>
+            </div>
+            <div>
+              <dt>4 views</dt>
+              <dd>challans, renewals, receipts, API</dd>
+            </div>
+            <div>
+              <dt>AA</dt>
+              <dd>contrast-first interface</dd>
+            </div>
+          </dl>
+          <p class="disclaimer">
+            Vehigo is a private technology concept. Official government records remain the final source of truth.
+          </p>
+        </div>
+      </section>
+
+      <section class="signal-strip" aria-label="Product focus">
+        <div class="container signal-grid">
+          <span>Fleet owners</span>
+          <span>Logistics teams</span>
+          <span>Finance operations</span>
+          <span>API partners</span>
+        </div>
+      </section>
+
+      <section class="section" id="platform" aria-labelledby="platform-title">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Core platform</p>
+            <h2 id="platform-title">Daily compliance without spreadsheet drift.</h2>
+            <p>
+              Vehigo focuses on the flows a fleet team checks every morning:
+              open dues, risky renewals, receipts, and who owns the next action.
+            </p>
+          </div>
+
+          <div class="feature-grid">
+            <article class="feature-card">
+              <div class="feature-icon feature-icon-teal" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <path d="M5 4h14v16H5zM8 8h8M8 12h5M8 16h7" />
+                </svg>
+              </div>
+              <h3>Challan Queue</h3>
+              <p>Vehicle-wise pending items, court flags, amounts, owner notes, and action status.</p>
+            </article>
+
+            <article class="feature-card">
+              <div class="feature-icon feature-icon-lime" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <path d="M7 3v3M17 3v3M4 8h16M5 5h14v15H5zM8 12h4M8 16h8" />
+                </svg>
+              </div>
+              <h3>Renewal Radar</h3>
+              <p>Fitness, insurance, PUC, permit, tax, and expiry windows in one calm view.</p>
+            </article>
+
+            <article class="feature-card">
+              <div class="feature-icon feature-icon-coral" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <path d="M6 3h12v18l-3-2-3 2-3-2-3 2zM9 8h6M9 12h6M9 16h4" />
+                </svg>
+              </div>
+              <h3>Receipt Trail</h3>
+              <p>Upload proof, tag records, and keep payment evidence ready for finance review.</p>
+            </article>
+
+            <article class="feature-card">
+              <div class="feature-icon feature-icon-blue" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <path d="M8 9H5a3 3 0 0 0 0 6h3M16 9h3a3 3 0 0 1 0 6h-3M8 12h8" />
+                </svg>
+              </div>
+              <h3>API Handshake</h3>
+              <p>Simple API-ready positioning for ERP, fleet software, and reporting exports.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section workflow-section" id="workflow" aria-labelledby="workflow-title">
+        <div class="container workflow-grid">
+          <div class="section-heading align-left">
+            <p class="eyebrow">Operating rhythm</p>
+            <h2 id="workflow-title">Designed around the daily review.</h2>
+            <p>
+              Vehigo keeps the daily flow narrow: add vehicles, review risk, assign action,
+              and keep evidence in one place.
+            </p>
+          </div>
+
+          <div class="workflow-list">
+            <article class="workflow-step">
+              <span>01</span>
+              <h3>Import fleet</h3>
+              <p>Start with a CSV-style vehicle list and required consent language.</p>
+            </article>
+            <article class="workflow-step">
+              <span>02</span>
+              <h3>Review exceptions</h3>
+              <p>Prioritize high-value dues, expiring documents, and missing receipts.</p>
+            </article>
+            <article class="workflow-step">
+              <span>03</span>
+              <h3>Close the loop</h3>
+              <p>Track payment handoffs, uploaded proof, and final reconciliation status.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section preview-section" id="preview" aria-labelledby="preview-title">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Interactive preview</p>
+            <h2 id="preview-title">A small dashboard for the daily review.</h2>
+            <p>
+              Explore sample compliance data, vehicle lookups, renewal status, and receipt ownership.
+            </p>
+          </div>
+
+          <div class="preview-shell" aria-label="Vehigo dashboard preview">
+            <div class="preview-toolbar">
+              <div>
+                <p class="toolbar-kicker">Workspace</p>
+                <h3>North Zone Fleet</h3>
+              </div>
+              <form class="quick-check" data-check-form>
+                <label for="vehicle-input">Vehicle number</label>
+                <div class="quick-check-row">
+                  <input id="vehicle-input" name="vehicle" value="MH12AB4581" autocomplete="off" />
+                  <button class="icon-button" type="submit" aria-label="Run demo check">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M5 12h14M13 6l6 6-6 6" />
+                    </svg>
+                  </button>
+                </div>
+              </form>
+            </div>
+
+            <div class="status-line" data-status-line aria-live="polite">
+              Demo vehicle MH12AB4581 has 2 pending challans and 1 renewal due soon.
+            </div>
+
+            <div class="tab-list" role="tablist" aria-label="Preview dataset">
+              <button class="tab-button is-active" id="tab-challans" role="tab" aria-selected="true" aria-controls="panel-challans" data-tab="challans">
+                Challans
+              </button>
+              <button class="tab-button" id="tab-renewals" role="tab" aria-selected="false" aria-controls="panel-renewals" data-tab="renewals">
+                Renewals
+              </button>
+              <button class="tab-button" id="tab-receipts" role="tab" aria-selected="false" aria-controls="panel-receipts" data-tab="receipts">
+                Receipts
+              </button>
+            </div>
+
+            <div class="preview-content">
+              <aside class="risk-panel" aria-label="Fleet risk summary">
+                <div>
+                  <span class="risk-label">Risk score</span>
+                  <strong>72</strong>
+                  <small>Moderate attention</small>
+                </div>
+                <div class="risk-bars" aria-hidden="true">
+                  <span style="height: 64%"></span>
+                  <span style="height: 42%"></span>
+                  <span style="height: 78%"></span>
+                  <span style="height: 51%"></span>
+                  <span style="height: 88%"></span>
+                </div>
+              </aside>
+
+              <div class="table-wrap">
+                <div class="tab-panel is-active" id="panel-challans" role="tabpanel" aria-labelledby="tab-challans" data-panel="challans">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>Vehicle</th>
+                        <th>Type</th>
+                        <th>Amount</th>
+                        <th>Status</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>MH12AB4581</td>
+                        <td>Court challan</td>
+                        <td>Rs. 4,200</td>
+                        <td><span class="pill pill-warn">Review</span></td>
+                      </tr>
+                      <tr>
+                        <td>GJ05CK7710</td>
+                        <td>Online challan</td>
+                        <td>Rs. 700</td>
+                        <td><span class="pill pill-good">Payable</span></td>
+                      </tr>
+                      <tr>
+                        <td>DL01TR2244</td>
+                        <td>Missing proof</td>
+                        <td>Rs. 1,100</td>
+                        <td><span class="pill pill-hot">Blocked</span></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <div class="tab-panel" id="panel-renewals" role="tabpanel" aria-labelledby="tab-renewals" data-panel="renewals" hidden>
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>Vehicle</th>
+                        <th>Document</th>
+                        <th>Due</th>
+                        <th>Status</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>KA03FT9231</td>
+                        <td>Fitness</td>
+                        <td>6 days</td>
+                        <td><span class="pill pill-hot">Urgent</span></td>
+                      </tr>
+                      <tr>
+                        <td>MH12AB4581</td>
+                        <td>PUC</td>
+                        <td>18 days</td>
+                        <td><span class="pill pill-warn">Soon</span></td>
+                      </tr>
+                      <tr>
+                        <td>HR55AA6567</td>
+                        <td>Insurance</td>
+                        <td>42 days</td>
+                        <td><span class="pill pill-good">Valid</span></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <div class="tab-panel" id="panel-receipts" role="tabpanel" aria-labelledby="tab-receipts" data-panel="receipts" hidden>
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>Receipt</th>
+                        <th>Vehicle</th>
+                        <th>Owner</th>
+                        <th>Status</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>RCPT-2041</td>
+                        <td>GJ05CK7710</td>
+                        <td>Finance</td>
+                        <td><span class="pill pill-good">Matched</span></td>
+                      </tr>
+                      <tr>
+                        <td>RCPT-2039</td>
+                        <td>DL01TR2244</td>
+                        <td>Ops</td>
+                        <td><span class="pill pill-warn">Pending</span></td>
+                      </tr>
+                      <tr>
+                        <td>RCPT-2035</td>
+                        <td>MH12AB4581</td>
+                        <td>Admin</td>
+                        <td><span class="pill pill-good">Archived</span></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section api-section" id="api" aria-labelledby="api-title">
+        <div class="container api-grid">
+          <div class="section-heading align-left">
+            <p class="eyebrow">Integration story</p>
+            <h2 id="api-title">API-ready without making the platform heavy.</h2>
+            <p>
+              Keep the website simple now, but show enterprise buyers where the platform can go:
+              vehicle sync, challan status, payment callbacks, and receipt exports.
+            </p>
+            <ul class="check-list">
+              <li>API-key based access for approved partners</li>
+              <li>Pricing and payment handoff hooks for finance teams</li>
+              <li>Exports for MIS and finance reconciliation</li>
+            </ul>
+          </div>
+
+          <div class="code-panel">
+            <div class="code-panel-head">
+              <span>Demo request</span>
+              <button class="copy-button" type="button" data-copy-code>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M8 8h10v12H8zM6 16H5a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v1" />
+                </svg>
+                <span data-copy-label>Copy</span>
+              </button>
+            </div>
+            <pre><code data-code>GET https://api.vehigo.in/v1/vehicles/MH12AB4581
+Authorization: Bearer YOUR_API_KEY
+
+{
+  "vehicle": "MH12AB4581",
+  "open_challans": 2,
+  "renewal_due_days": 18,
+  "risk": "review"
+}</code></pre>
+          </div>
+        </div>
+      </section>
+
+      <section class="section demo-section" id="demo" aria-labelledby="demo-title">
+        <div class="container demo-grid">
+          <div class="section-heading align-left">
+            <p class="eyebrow">Demo intake</p>
+            <h2 id="demo-title">Start with demo requests and fleet imports.</h2>
+            <p>
+              Capture qualified interest, understand fleet size, and hand operators a clear
+              next step for compliance cleanup.
+            </p>
+          </div>
+
+          <form class="lead-form" data-lead-form>
+            <div class="form-grid">
+              <label>
+                Name
+                <input type="text" name="name" placeholder="Aarav Mehta" autocomplete="name" required />
+              </label>
+              <label>
+                Work email
+                <input type="email" name="email" placeholder="ops@company.com" autocomplete="email" required />
+              </label>
+              <label>
+                Company
+                <input type="text" name="company" placeholder="North Zone Logistics" autocomplete="organization" required />
+              </label>
+              <label>
+                Phone
+                <input type="tel" name="phone" placeholder="+91 98765 43210" autocomplete="tel" />
+              </label>
+              <label>
+                Fleet size
+                <select name="fleet">
+                  <option>1-25 vehicles</option>
+                  <option>26-100 vehicles</option>
+                  <option>101-500 vehicles</option>
+                  <option>500+ vehicles</option>
+                </select>
+              </label>
+              <label>
+                Main problem
+                <select name="problem">
+                  <option>Pending challans</option>
+                  <option>Renewal tracking</option>
+                  <option>Receipts and MIS</option>
+                  <option>API integration</option>
+                </select>
+              </label>
+            </div>
+            <label>
+              Notes
+              <textarea name="notes" rows="4" placeholder="Tell us what your team needs to clean up first."></textarea>
+            </label>
+            <div class="lead-actions">
+              <button class="button button-primary" type="submit">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M4 12h16M14 6l6 6-6 6" />
+                </svg>
+                Submit interest
+              </button>
+              <button class="button button-ghost" type="button" data-export-leads disabled>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 3v12M7 10l5 5 5-5M5 21h14" />
+                </svg>
+                Export CSV
+              </button>
+            </div>
+            <p class="form-note" data-form-note aria-live="polite">
+              Demo requests are saved in this browser so the static site can be used without a backend.
+            </p>
+            <div class="lead-summary" data-lead-summary aria-live="polite"></div>
+          </form>
+        </div>
+      </section>
+
+      <section class="section faq-section" aria-labelledby="faq-title">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Buyer questions</p>
+            <h2 id="faq-title">Clear answers for an early competitor site.</h2>
+          </div>
+          <div class="faq-list">
+            <details>
+              <summary>Is Vehigo a government website?</summary>
+              <p>No. Vehigo is positioned as a private compliance-support technology platform.</p>
+            </details>
+            <details>
+              <summary>What does the site capture?</summary>
+              <p>Demo requests are saved locally in the browser and can be exported as a CSV for follow-up.</p>
+            </details>
+            <details>
+              <summary>Can this become a full SaaS?</summary>
+              <p>Yes. The next layer would add authentication, database-backed vehicles, payment gateway flows, and partner APIs.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <a class="brand footer-brand" href="#">
+          <img src="assets/vehigo-mark.svg" alt="" width="32" height="32" />
+          <span>Vehigo</span>
+        </a>
+        <p>Private fleet compliance technology concept for India.</p>
+        <nav aria-label="Footer navigation">
+          <a href="#platform">Platform</a>
+          <a href="#preview">Preview</a>
+          <a href="#demo">Demo</a>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
